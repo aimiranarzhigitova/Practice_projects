@@ -1,0 +1,55 @@
+
+<form action="/#wpcf7-f4-p6-o1"
+      method="post"
+      class="wpcf7-form cf7_custom_style_1"
+      novalidate="novalidate">
+    <div style="display: none;">
+
+    </div>
+
+
+    {{csrf_token}}<br>
+    <p><span
+            class="wpcf7-form-control-wrap Name">
+        {{ form.name }}
+        <input
+            type="text" name="Укажите Имя"
+            value="" size="40"
+            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+            aria-required="true"
+            aria-invalid="false"
+            placeholder="Укажите Имя"/></span><br/>
+
+        <span class="wpcf7-form-control-wrap E-mail">
+            {{ form.email }}
+            <input
+                type="email"
+                name="E-mail"
+                value="" size="40"
+                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                aria-required="true"
+                aria-invalid="false"
+                placeholder="Ваш E-mail"/></span>
+    </p>
+    <p>
+
+    <span class="wpcf7-form-control-wrap textarea-617">
+
+       {{ form.content }}
+        <textarea
+            name="textarea-617"
+            cols="40" rows="10"
+            class="wpcf7-form-control wpcf7-textarea"
+            aria-invalid="false"
+            placeholder="Можете написать нам пожелание:)">
+
+        </textarea>
+    </span>
+    </p>
+    <div style="margin-top:13px;">
+        <input type="submit"
+               value="Отправить"
+               class="wpcf7-form-control wpcf7-submit"/>
+    </div>
+    <div class="wpcf7-response-output wpcf7-display-none"></div>
+</form>
